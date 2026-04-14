@@ -1,5 +1,5 @@
-package lab4.Cartas;
-import lab4.Entidades.Entidade;
+package lab5.Cartas;
+import lab5.Entidades.Entidade;
 
 public class CartaEscudo extends Carta {
 

@@ -1,6 +1,6 @@
-package lab4.Cartas;
+package lab5.Cartas;
 
-import lab4.Entidades.Entidade;
+import lab5.Entidades.Entidade;
 
 /**gaste todos os pontos de força do alvo e converta em dano */
 public class CartaMortalForca extends Carta {

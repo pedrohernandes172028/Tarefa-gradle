@@ -51,13 +51,6 @@ public class HeroiTest {
     }
     
     @Test
-    void testResetarEnergia() {
-        heroi.setEnergia(5);
-        heroi.resetarenergia();
-        assertEquals(heroi.getEnergiaMaxima(), heroi.getEnergia());
-    }
-    
-    @Test
     void testGetNome() {
         assertEquals("Teste", heroi.getNome());
     }

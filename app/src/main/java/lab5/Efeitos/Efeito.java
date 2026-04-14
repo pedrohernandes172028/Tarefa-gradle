@@ -1,12 +1,13 @@
-package lab4.Efeitos;
-import lab4.Entidades.Entidade;
+package lab5.Efeitos;
+import lab5.Entidades.Entidade;
 
 public abstract class Efeito {
     private String nome;
-    private Entidade dono;
     private int acumulo;
     /** conjunto de momentos que ocorrem durante o jogo em que o efeito é acionado */
     private int[] momentos; 
+
+    private transient Entidade dono;
 
     public Efeito(String nome, Entidade dono, int acumulo, int[] momentos){
         this.nome = nome;
@@ -29,6 +30,11 @@ public abstract class Efeito {
     public int[] getMomentos(){
         return momentos;
     }
+
+    public void mudarDono(Entidade dono){
+        this.dono = dono;
+    }
+
 
     /**
      * soma um valor no atributo acumulo e remove esse efeito do seu dono caso acumulo menor ou igual a 0 

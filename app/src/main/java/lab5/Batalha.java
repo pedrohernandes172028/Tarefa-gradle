@@ -2,8 +2,7 @@ package lab5;
 
 import java.util.List;
 import java.util.Scanner;
-import lab5.Entidades.Heroi;
-import lab5.Entidades.Inimigo;
+import lab5.Entidades.*;
 
 /**
  * Encapsula a lógica de um combate individual
@@ -58,9 +57,8 @@ public class Batalha {
             copias.add(new Cobrinha(
                 inimigo.getNome(),
                 inimigo.getVidaMaxima(),
-                inimigo.getVelocidade(),
-                inimigo.getAtaqueBase(),
-                inimigo.getVida()
+                inimigo.getEscudo(),
+                inimigo.getVelocidade()
             ));
         }
         return copias;

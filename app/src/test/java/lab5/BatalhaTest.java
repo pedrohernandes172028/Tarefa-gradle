@@ -5,21 +5,20 @@ import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
 import java.util.List;
-import lab5.Entidades.Heroi;
 import lab5.Entidades.Inimigo;
+
 import lab5.Entidades.Cobrinha;
 
 public class BatalhaTest {
     private Batalha batalha;
     private List<Inimigo> inimigos;
-    private Heroi heroi;
     
     @BeforeEach
     void setUp() {
         inimigos = new ArrayList<>();
-        inimigos.add(new Cobrinha("Inimigo1", 10, 5, 3, 10));
+        inimigos.add(new Cobrinha("Inimigo1", 10, 5, 10));
         batalha = new Batalha(inimigos);
-        heroi = new Heroi("Teste", 30, 5, 10);
+
     }
     
     @Test

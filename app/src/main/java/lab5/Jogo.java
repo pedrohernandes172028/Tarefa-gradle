@@ -22,7 +22,13 @@ public class Jogo {
         this.emExecucao = true;
     }
     
-    public void iniciar() {
+    /**
+     * 
+     * @return retorna true para salvar o jogo e retorna false para nao salvar
+     */
+    public boolean iniciar() {
+        boolean salvar = false;
+
         System.out.println("\n=== INÍCIO DA JORNADA ===");
         System.out.println("Herói: " + heroi.getNome());
         System.out.println("Vida: " + heroi.getVida());
@@ -57,21 +63,23 @@ public class Jogo {
             if (!progredir()) {
                 System.out.println("\nJogo encerrado.");
                 emExecucao = false;
+                salvar = true;
             }
         }
+        return salvar;
     }
     
     /**
      * Permite ao jogador escolher o próximo nó
      * @return true se o jogo deve continuar, false caso contrário
      */
-    private boolean progredir() {
+    public boolean progredir() {
         List<NoMapa> proximos = mapa.getProximosNos(noAtual);
         
-        if (proximos.isEmpty()) {
+/*         if (proximos.isEmpty()) {
             System.out.println("\nNão há mais caminhos disponíveis!");
             return false;
-        }
+        } */
         
         System.out.println("\n=== ESCOLHA O PRÓXIMO DESTINO ===");
         System.out.println("Vida atual: " + heroi.getVida());
@@ -90,6 +98,7 @@ public class Jogo {
                 
                 if (escolha == 0) {
                     System.out.println("Salvando jogo...");
+                    
                     return false;
                 }
                 

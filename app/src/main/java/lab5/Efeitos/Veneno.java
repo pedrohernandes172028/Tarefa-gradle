@@ -1,5 +1,5 @@
-package lab4.Efeitos;
-import lab4.Entidades.Entidade;
+package lab5.Efeitos;
+import lab5.Entidades.Entidade;
 
 /**Veneno causa continuo a cada turno geral que passa
  * Veneno é acionado no final de um turno geral

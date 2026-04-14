@@ -5,6 +5,8 @@ import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
 import java.util.List;
+
+
 import lab5.Entidades.Cobrinha;
 import lab5.Entidades.Inimigo;
 
@@ -15,12 +17,12 @@ public class MapaTest {
     @BeforeEach
     void setUp() {
         List<Inimigo> inimigos1 = new ArrayList<>();
-        inimigos1.add(new Cobrinha("Teste", 10, 5, 5, 10));
+        inimigos1.add(new Cobrinha("Teste", 10, 5,  10));
         Batalha batalha1 = new Batalha(inimigos1);
         raiz = new NoMapa(batalha1, "Nó Raiz");
         
         List<Inimigo> inimigos2 = new ArrayList<>();
-        inimigos2.add(new Cobrinha("Teste2", 10, 5, 5, 10));
+        inimigos2.add(new Cobrinha("Teste2", 10, 5,  10));
         Batalha batalha2 = new Batalha(inimigos2);
         NoMapa filho = new NoMapa(batalha2, "Nó Filho");
         

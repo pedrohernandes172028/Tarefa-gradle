@@ -1,10 +1,10 @@
-package lab4.Entidades;
+package lab5.Entidades;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import lab4.Cartas.Carta;
-import lab4.Efeitos.*;
+import lab5.Cartas.Carta;
+import lab5.Efeitos.*;
 
 /**
  * Representa qualquer personagem no jogo
@@ -19,9 +19,10 @@ public abstract class Entidade {
     /** decide quem vai realizar sua ação primeiro */
     private int velocidade;
     /** a posição da acao em acoes que o inimigo vai fazer ou a posicao da acao em cartasNaMao que o heroi vai fazer */
-    private Carta acaoEscolhida; 
+    private transient Carta acaoEscolhida; 
     /** o alvo da sua ação  */
-    private Entidade alvo;  
+    private transient Entidade alvo;
+
 
     /**
      * 

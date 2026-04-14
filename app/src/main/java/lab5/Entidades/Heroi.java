@@ -1,7 +1,7 @@
-package lab4.Entidades;
+package lab5.Entidades;
 import java.util.Scanner;
 
-import lab4.Cartas.Carta;
+import lab5.Cartas.Carta;
 
 import java.util.List;
 
@@ -17,6 +17,7 @@ public class Heroi extends Entidade{
         super(nome, vida, escudo, velocidade);
         this.baralho = new Baralho();
         this.energia = 0;
+
     }
 
     /**Usado sempre no final do turno para zerar o escudo do jogador */
@@ -76,7 +77,7 @@ public class Heroi extends Entidade{
             mudarAlvo(null);
             mudarEscolha(-1);
             return false;
-        }else if (comando > baralho.getnCartasNaMao()) {  /*escolheu um espaço de carta que nao existe no momento */
+        }else if (comando > baralho.getnCartasNaMao() || comando <= 0) {  /*escolheu um espaço de carta que nao existe no momento */
             System.out.println("Sem nenhuma carta na posição escolhida.\n");
             mudarAlvo(null);
             mudarEscolha(-1);

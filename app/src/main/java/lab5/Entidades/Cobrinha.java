@@ -1,12 +1,13 @@
-package lab4.Entidades;
+package lab5.Entidades;
 import java.util.List;
-import lab4.Cartas.*;
 import java.util.Random;
+
+import lab5.Cartas.*;
 
 /** tipo de inimigo focado em causar veneno */
 public class Cobrinha extends Inimigo{
     
-    public Cobrinha(String nome, int vida, int escudo, int dano, int velocidade){
+    public Cobrinha(String nome, int vida, int escudo, int velocidade){
         super(nome, vida, escudo, velocidade);
         determinarAcoes();   
     }
