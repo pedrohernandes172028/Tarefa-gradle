@@ -55,7 +55,7 @@ public class App {
      * Cria o mapa do jogo como uma árvore de batalhas
      * @return Mapa configurado
      */
-    private static Mapa criarMapa() {
+    protected static Mapa criarMapa() { /*deixei protected para poder testar no jacoco*/
         // Nível 1 (raiz)
         List<Inimigo> inimigos1 = new ArrayList<>();
         inimigos1.add(new Cobrinha("Cobra Guardiã", 12, 6, 10));
