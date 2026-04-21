@@ -8,7 +8,7 @@ import lab5.Entidades.*;
  */
 public class DadosJogo {
     private Heroi heroi;
-    private String nomeNoAtual;
+    private String nomeNoAtual; /*apenas o nome de uma fase Nó*/
 
     public DadosJogo(Heroi heroi, String nomeNoAtual){  
         this.heroi = heroi;
@@ -22,7 +22,13 @@ public class DadosJogo {
         return nomeNoAtual;
     }
 
-    public NoMapa procuraNo(NoMapa atual, String nomeNoMapa){  /*Busca em profundidade */
+    /**
+     * encontra a fase Nó que possui o mesmo nome de nomeNoMapa
+     * @param atual  nó atual enquanto a busca em profudade vai andando no mapa
+     * @param nomeNoMapa  nome da fase que queremos encontrar no mapa
+     * @return  retorna o Nó da fase procurada
+     */
+    public NoMapa procuraNo(NoMapa atual, String nomeNoMapa){  /*Busca em profundidade*/
 
         if (atual == null){
             return null;

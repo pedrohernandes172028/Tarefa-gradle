@@ -34,14 +34,12 @@ public class JogoSalvo {
     public JogoSalvo(){
         GsonBuilder builder = new GsonBuilder();
 
-        // Criamos o adaptador para a classe abstrata Carta
         JsonDeserializer<Carta> adaptadorDeCartas = (json, typeOfT, context) -> {
             JsonObject jsonObject = json.getAsJsonObject();
             
-            // Pegamos o valor de 'momentos' que está no JSON
             int momentos = jsonObject.get("momentos").getAsInt();
 
-            // Lógica de decisão baseada nos valores que você definiu:
+            /*Lógica de decisão baseada nos valores momento de cada carta*/
             if (momentos == 2) {
                 return context.deserialize(json, CartaDano.class);
             }else if (momentos == 4){
@@ -68,6 +66,7 @@ public class JogoSalvo {
             JsonArray momentosArray = jsonObject.getAsJsonArray("momentos");
             int primeiroMomento = momentosArray.get(0).getAsInt();
 
+            /*Lógica de decisão baseada nos valores momento de cada efeito*/
             if (primeiroMomento == 2) {
                 return context.deserialize(json, Forca.class);
             } 
@@ -76,7 +75,6 @@ public class JogoSalvo {
             }
         });
 
-        // Registramos o adaptador e criamos o Gson
         this.gson = builder
                 .registerTypeAdapter(Carta.class, adaptadorDeCartas)
                 .setPrettyPrinting()
