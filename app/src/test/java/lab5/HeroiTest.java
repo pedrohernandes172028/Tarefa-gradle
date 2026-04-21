@@ -3,7 +3,13 @@ package lab5;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import lab5.Entidades.Cobrinha;
 import lab5.Entidades.Heroi;
+import lab5.Entidades.Inimigo;
 
 public class HeroiTest {
     private Heroi heroi;
@@ -59,4 +65,19 @@ public class HeroiTest {
     void testGetVidaMaxima() {
         assertEquals(30, heroi.getVidaMaxima());
     }
+
+    @Test
+        void testRealizarAcao() {
+        ArrayList<Inimigo> inimigos = new ArrayList<>();
+
+        inimigos.add(new Cobrinha("Cobra", 20, 5, 8));
+            heroi.resetarenergia(); 
+            heroi.getBaralho().comprarCartas();
+
+            Scanner scannerSimulado = new Scanner("1 1");
+            boolean continuaTurno = heroi.realizarAcao(heroi, inimigos, scannerSimulado);
+            
+            assertTrue(continuaTurno);
+            assertEquals(inimigos.get(0), heroi.getAlvo());
+        }
 }
