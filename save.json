@@ -3,16 +3,60 @@
     "baralho": {
       "cartasNaMao": [
         {
-          "nome": "poção de cura",
-          "descricao": "concede 5 de cura / custa 1 energia",
-          "custo": 1,
-          "momentos": 10
-        },
-        {
           "nome": "Lança vampirica",
           "descricao": "causa (9 vezes força do alvo) de dano e gasta todo o acúmulo de força do alvo / custa 3 de energia",
           "custo": 3,
           "momentos": 16
+        },
+        {
+          "nome": "teia de aranha",
+          "descricao": "concede -2 de velocidade ao alvo / custa 1 energia",
+          "custo": 1,
+          "momentos": 14
+        },
+        {
+          "nome": "Espada de cobre",
+          "descricao": "causa 10 de dano ao alvo / custa 2 energias",
+          "custo": 2,
+          "momentos": 2
+        },
+        {
+          "nome": "Esteróide",
+          "descricao": "concede +1 de força ao alvo/ custa 1 energia",
+          "custo": 1,
+          "momentos": 6
+        }
+      ],
+      "deckCompra": [
+        {
+          "nome": "dardo envenenado",
+          "descricao": "concede +1 de veneno ao alvo / custa 1 energia",
+          "custo": 1,
+          "momentos": 8
+        },
+        {
+          "nome": "Líquido infectado",
+          "descricao": "causa (6 vezes veneno do alvo) de dano e gasta todo o acúmulo de veneno do alvo / custa 2 de energia",
+          "custo": 2,
+          "momentos": 18
+        },
+        {
+          "nome": "Espada de cobre",
+          "descricao": "causa 10 de dano ao alvo / custa 2 energias",
+          "custo": 2,
+          "momentos": 2
+        },
+        {
+          "nome": "dardo envenenado",
+          "descricao": "concede +1 de veneno ao alvo / custa 1 energia",
+          "custo": 1,
+          "momentos": 8
+        },
+        {
+          "nome": "poção de cura",
+          "descricao": "concede 5 de cura / custa 1 energia",
+          "custo": 1,
+          "momentos": 10
         },
         {
           "nome": "Escudo de madeira",
@@ -21,13 +65,17 @@
           "momentos": 4
         },
         {
-          "nome": "teia de aranha",
-          "descricao": "concede -2 de velocidade ao alvo / custa 1 energia",
+          "nome": "pés ágeis",
+          "descricao": "concede +2 de velocidade ao alvo / custa 1 energia",
           "custo": 1,
-          "momentos": 14
-        }
-      ],
-      "deckCompra": [
+          "momentos": 12
+        },
+        {
+          "nome": "Esteróide",
+          "descricao": "concede +1 de força ao alvo/ custa 1 energia",
+          "custo": 1,
+          "momentos": 6
+        },
         {
           "nome": "Escudo de madeira",
           "descricao": "concede 5 de escudo ao alvo / custa 1 energia",
@@ -55,54 +103,6 @@
           "momentos": 4
         },
         {
-          "nome": "pés ágeis",
-          "descricao": "concede +2 de velocidade ao alvo / custa 1 energia",
-          "custo": 1,
-          "momentos": 12
-        },
-        {
-          "nome": "dardo envenenado",
-          "descricao": "concede +1 de veneno ao alvo / custa 1 energia",
-          "custo": 1,
-          "momentos": 8
-        },
-        {
-          "nome": "Esteróide",
-          "descricao": "concede +1 de força ao alvo/ custa 1 energia",
-          "custo": 1,
-          "momentos": 6
-        },
-        {
-          "nome": "Espada de cobre",
-          "descricao": "causa 10 de dano ao alvo / custa 2 energias",
-          "custo": 2,
-          "momentos": 2
-        },
-        {
-          "nome": "dardo envenenado",
-          "descricao": "concede +1 de veneno ao alvo / custa 1 energia",
-          "custo": 1,
-          "momentos": 8
-        },
-        {
-          "nome": "Líquido infectado",
-          "descricao": "causa (6 vezes veneno do alvo) de dano e gasta todo o acúmulo de veneno do alvo / custa 2 de energia",
-          "custo": 2,
-          "momentos": 18
-        },
-        {
-          "nome": "Esteróide",
-          "descricao": "concede +1 de força ao alvo/ custa 1 energia",
-          "custo": 1,
-          "momentos": 6
-        },
-        {
-          "nome": "Espada de cobre",
-          "descricao": "causa 10 de dano ao alvo / custa 2 energias",
-          "custo": 2,
-          "momentos": 2
-        },
-        {
           "nome": "Espada de cobre",
           "descricao": "causa 10 de dano ao alvo / custa 2 energias",
           "custo": 2,
@@ -112,7 +112,7 @@
     },
     "energia": 1,
     "nome": "W",
-    "vida": 23,
+    "vida": 13,
     "vidaMaxima": 40,
     "escudo": 0,
     "efeitos": [
