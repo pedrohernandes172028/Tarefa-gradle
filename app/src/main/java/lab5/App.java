@@ -3,7 +3,12 @@ package lab5;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
+
+import lab5.Cenario.Mapa;
+import lab5.Cenario.NoMapa;
 import lab5.Entidades.*;
+import lab5.Salvar.DadosJogo;
+import lab5.Salvar.JogoSalvo;
 
 public class App {
     private static JogoSalvo gerenciadorSalvamento = new JogoSalvo();

@@ -2,6 +2,9 @@ package lab5;
 
 import java.util.List;
 import java.util.Scanner;
+
+import lab5.Cenario.Mapa;
+import lab5.Cenario.NoMapa;
 import lab5.Entidades.Heroi;
 
 /**

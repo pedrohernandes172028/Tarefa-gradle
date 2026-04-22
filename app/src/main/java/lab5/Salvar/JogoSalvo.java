@@ -1,11 +1,10 @@
-package lab5;
+package lab5.Salvar;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonDeserializer;
 import com.google.gson.JsonObject;
-
 
 import lab5.Cartas.Carta;
 import lab5.Cartas.CartaCura;

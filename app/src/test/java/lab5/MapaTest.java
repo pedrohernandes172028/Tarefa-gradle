@@ -6,7 +6,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
 import java.util.List;
 
-
+import lab5.Cenario.Mapa;
+import lab5.Cenario.NoMapa;
 import lab5.Entidades.Cobrinha;
 import lab5.Entidades.Inimigo;
 

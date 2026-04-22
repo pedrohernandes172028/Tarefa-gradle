@@ -1,5 +1,6 @@
-package lab5;
+package lab5.Salvar;
 
+import lab5.Cenario.NoMapa;
 import lab5.Entidades.*;
 
 

@@ -9,16 +9,16 @@
           "momentos": 16
         },
         {
-          "nome": "teia de aranha",
-          "descricao": "concede -2 de velocidade ao alvo / custa 1 energia",
+          "nome": "Escudo de madeira",
+          "descricao": "concede 5 de escudo ao alvo / custa 1 energia",
           "custo": 1,
-          "momentos": 14
+          "momentos": 4
         },
         {
-          "nome": "Espada de cobre",
-          "descricao": "causa 10 de dano ao alvo / custa 2 energias",
-          "custo": 2,
-          "momentos": 2
+          "nome": "Escudo de madeira",
+          "descricao": "concede 5 de escudo ao alvo / custa 1 energia",
+          "custo": 1,
+          "momentos": 4
         },
         {
           "nome": "Esteróide",
@@ -29,40 +29,28 @@
       ],
       "deckCompra": [
         {
-          "nome": "dardo envenenado",
-          "descricao": "concede +1 de veneno ao alvo / custa 1 energia",
-          "custo": 1,
-          "momentos": 8
-        },
-        {
-          "nome": "Líquido infectado",
-          "descricao": "causa (6 vezes veneno do alvo) de dano e gasta todo o acúmulo de veneno do alvo / custa 2 de energia",
-          "custo": 2,
-          "momentos": 18
-        },
-        {
-          "nome": "Espada de cobre",
-          "descricao": "causa 10 de dano ao alvo / custa 2 energias",
-          "custo": 2,
-          "momentos": 2
-        },
-        {
-          "nome": "dardo envenenado",
-          "descricao": "concede +1 de veneno ao alvo / custa 1 energia",
-          "custo": 1,
-          "momentos": 8
-        },
-        {
           "nome": "poção de cura",
           "descricao": "concede 5 de cura / custa 1 energia",
           "custo": 1,
           "momentos": 10
         },
         {
-          "nome": "Escudo de madeira",
-          "descricao": "concede 5 de escudo ao alvo / custa 1 energia",
+          "nome": "dardo envenenado",
+          "descricao": "concede +1 de veneno ao alvo / custa 1 energia",
           "custo": 1,
-          "momentos": 4
+          "momentos": 8
+        },
+        {
+          "nome": "teia de aranha",
+          "descricao": "concede -2 de velocidade ao alvo / custa 1 energia",
+          "custo": 1,
+          "momentos": 14
+        },
+        {
+          "nome": "Espada de cobre",
+          "descricao": "causa 10 de dano ao alvo / custa 2 energias",
+          "custo": 2,
+          "momentos": 2
         },
         {
           "nome": "pés ágeis",
@@ -77,13 +65,11 @@
           "momentos": 6
         },
         {
-          "nome": "Escudo de madeira",
-          "descricao": "concede 5 de escudo ao alvo / custa 1 energia",
-          "custo": 1,
-          "momentos": 4
-        }
-      ],
-      "deckDescarte": [
+          "nome": "Líquido infectado",
+          "descricao": "causa (6 vezes veneno do alvo) de dano e gasta todo o acúmulo de veneno do alvo / custa 2 de energia",
+          "custo": 2,
+          "momentos": 18
+        },
         {
           "nome": "Esteróide",
           "descricao": "concede +1 de força ao alvo/ custa 1 energia",
@@ -91,16 +77,30 @@
           "momentos": 6
         },
         {
-          "nome": "dardo envenenado",
-          "descricao": "concede +1 de veneno ao alvo / custa 1 energia",
-          "custo": 1,
-          "momentos": 8
-        },
-        {
           "nome": "Escudo de madeira",
           "descricao": "concede 5 de escudo ao alvo / custa 1 energia",
           "custo": 1,
           "momentos": 4
+        },
+        {
+          "nome": "dardo envenenado",
+          "descricao": "concede +1 de veneno ao alvo / custa 1 energia",
+          "custo": 1,
+          "momentos": 8
+        }
+      ],
+      "deckDescarte": [
+        {
+          "nome": "Espada de cobre",
+          "descricao": "causa 10 de dano ao alvo / custa 2 energias",
+          "custo": 2,
+          "momentos": 2
+        },
+        {
+          "nome": "dardo envenenado",
+          "descricao": "concede +1 de veneno ao alvo / custa 1 energia",
+          "custo": 1,
+          "momentos": 8
         },
         {
           "nome": "Espada de cobre",
@@ -112,20 +112,11 @@
     },
     "energia": 1,
     "nome": "W",
-    "vida": 13,
+    "vida": 40,
     "vidaMaxima": 40,
     "escudo": 0,
-    "efeitos": [
-      {
-        "nome": "Força explosiva",
-        "acumulo": 3,
-        "momentos": [
-          2,
-          16
-        ]
-      }
-    ],
-    "velocidade": 12
+    "efeitos": [],
+    "velocidade": 10
   },
-  "nomeNoAtual": "Clareira Escura"
+  "nomeNoAtual": "Entrada da Floresta"
 }

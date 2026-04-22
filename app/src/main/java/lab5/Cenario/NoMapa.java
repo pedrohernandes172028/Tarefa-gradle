@@ -1,7 +1,9 @@
-package lab5;
+package lab5.Cenario;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import lab5.Batalha;
 
 /**
  * Representa um nó no mapa, contendo uma batalha e conexões para outros nós
