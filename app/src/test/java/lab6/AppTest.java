@@ -1,8 +1,8 @@
-package lab5;
+package lab6;
 
 import org.junit.jupiter.api.Test;
 
-import lab5.Cenario.Mapa;
+import lab6.Cenario.Mapa;
 
 import static org.junit.jupiter.api.Assertions.*;
 
