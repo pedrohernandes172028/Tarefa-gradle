@@ -1,6 +1,6 @@
-package lab5.Cartas;
-import lab5.Efeitos.Veneno;
-import lab5.Entidades.Entidade;
+package lab6.Cartas;
+import lab6.Efeitos.Veneno;
+import lab6.Entidades.Entidade;
 
 /** ativa a forma específica Veneno fraco do efeito Veneno*/ 
 public class CartaVeneno extends Carta{

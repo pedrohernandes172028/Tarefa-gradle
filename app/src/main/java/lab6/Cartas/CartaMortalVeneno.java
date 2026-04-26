@@ -1,6 +1,6 @@
-package lab5.Cartas;
+package lab6.Cartas;
 
-import lab5.Entidades.Entidade;
+import lab6.Entidades.Entidade;
 
 /**gaste todos os pontos de veneno do alvo e converta em dano */
 public class CartaMortalVeneno extends Carta{

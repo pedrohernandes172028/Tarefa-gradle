@@ -1,8 +1,8 @@
-package lab5.Entidades;
+package lab6.Entidades;
 import java.util.List;
 import java.util.Scanner;
 
-import lab5.Cartas.Carta;
+import lab6.Cartas.Carta;
 public abstract class Inimigo extends Entidade {
     /**Todas as açoes que o inimigo pode fazer, acoes é definida apenas pela classe que herda Inimigo.  */
     protected Carta[] acoes;

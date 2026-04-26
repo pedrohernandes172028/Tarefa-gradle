@@ -1,10 +1,14 @@
-package lab5.Cenario;
+package lab6.Cenario;
 
 import java.util.Scanner;
 
-import lab5.Entidades.*;
+import lab6.Entidades.*;
 
+/**
+ * será a representação de uma fase do jogo, podendo ser: batalha, escolha, fogueira ou loja
+ */
 public abstract class Evento {
+    /**nome do evento */
     private String descricao;
     
     public Evento(String descricao){

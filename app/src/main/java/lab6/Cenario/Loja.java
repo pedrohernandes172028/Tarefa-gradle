@@ -1,12 +1,19 @@
-package lab5.Cenario;
+package lab6.Cenario;
 
 import java.util.Scanner;
-import java.util.ArrayList;
-import lab5.Cartas.*;
-import lab5.Entidades.Heroi;
 
+import lab6.Cartas.*;
+import lab6.Entidades.Heroi;
+
+import java.util.ArrayList;
+
+/**
+ * evento para comprar cartas ou para remover uma carta do baralho do jogador
+ */
 public class Loja extends Evento{
+    /**cartas disponíveis na loja */
     private ArrayList<Carta> cartas;
+    /**preço de cada carta na respectiva posição no array */
     private ArrayList<Integer> precos;
     public Loja(String descricao, ArrayList<Carta> cartas, ArrayList<Integer> precos){
         super(descricao);
@@ -54,6 +61,9 @@ public class Loja extends Evento{
         return true;
     }
 
+    /**
+     * print no terminal de todas as cartas disponíveis na loja
+     */
     private void printCartasLoja(){
         for (int i = 0; i < cartas.size(); i++){
             System.out.println(i + 2 + ". " + cartas.get(i).getNome() + " (" + precos.get(i) + " rupias)");

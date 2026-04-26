@@ -1,9 +1,13 @@
-package lab5.Cenario;
+package lab6.Cenario;
 
 import java.util.Scanner;
 
-import lab5.Entidades.Heroi;
-import lab5.Cartas.*;
+import lab6.Cartas.*;
+import lab6.Entidades.Heroi;
+
+/**
+ * evento para recuperar vida ou para clonar uma carta do baralho
+ */
 public class Fogueira extends Evento{
     
     public Fogueira(String descricao){

@@ -1,5 +1,5 @@
-package lab5.Efeitos;
-import lab5.Entidades.Entidade;
+package lab6.Efeitos;
+import lab6.Entidades.Entidade;
 
 public abstract class Efeito {
     private String nome;

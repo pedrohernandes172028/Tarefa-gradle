@@ -1,5 +1,5 @@
-package lab5.Cartas;
-import lab5.Entidades.Entidade;
+package lab6.Cartas;
+import lab6.Entidades.Entidade;
 
 /**aumenta apenas a vida do alvo */
 public class CartaCura extends Carta {

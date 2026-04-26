@@ -1,7 +1,8 @@
-package lab5.Entidades;
+package lab6.Entidades;
 import java.util.Scanner;
 
-import lab5.Cartas.Carta;
+import lab6.Cartas.Carta;
+
 import java.util.List;
 
 

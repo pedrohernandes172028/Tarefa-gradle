@@ -1,12 +1,12 @@
-package lab5.Cenario;
+package lab6.Cenario;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import lab5.Entidades.Entidade;
-import lab5.Entidades.Heroi;
-import lab5.Entidades.Inimigo;
+import lab6.Entidades.Entidade;
+import lab6.Entidades.Heroi;
+import lab6.Entidades.Inimigo;
 
 /**
  * Controla ordem de turnos, realização de ações de inimigos e heroi

@@ -1,15 +1,16 @@
-package lab5;
+package lab6;
 
 import org.junit.jupiter.api.Test;
+
+import lab6.Entidades.Cobrinha;
+import lab6.Entidades.Heroi;
+import lab6.Entidades.Inimigo;
+
 import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
-import lab5.Entidades.Cobrinha;
-import lab5.Entidades.Heroi;
-import lab5.Entidades.Inimigo;
 
 public class HeroiTest {
     private Heroi heroi;

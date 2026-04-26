@@ -1,16 +1,17 @@
-package lab5;
+package lab6;
 
 import org.junit.jupiter.api.Test;
+
+import lab6.Cenario.Batalha;
+import lab6.Cenario.Mapa;
+import lab6.Cenario.NoMapa;
+import lab6.Entidades.Cobrinha;
+import lab6.Entidades.Inimigo;
+
 import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
 import java.util.List;
-
-import lab5.Cenario.Batalha;
-import lab5.Cenario.Mapa;
-import lab5.Cenario.NoMapa;
-import lab5.Entidades.Cobrinha;
-import lab5.Entidades.Inimigo;
 
 public class MapaTest {
     private Mapa mapa;

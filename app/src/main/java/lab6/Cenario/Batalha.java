@@ -1,9 +1,9 @@
-package lab5.Cenario;
+package lab6.Cenario;
 
 import java.util.List;
 import java.util.Scanner;
 
-import lab5.Entidades.*;
+import lab6.Entidades.*;
 
 /**
  * Encapsula a lógica de um combate individual

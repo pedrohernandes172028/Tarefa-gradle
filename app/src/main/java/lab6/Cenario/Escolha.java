@@ -1,8 +1,8 @@
-package lab5.Cenario;
+package lab6.Cenario;
 
 import java.util.Scanner;
 
-import lab5.Entidades.Heroi;
+import lab6.Entidades.Heroi;
 
 /**
  * o Heroi acha uma caixa com itens diferentes, podem representar beneficios ou maleficios, mas o heroi não sabe.
@@ -46,6 +46,9 @@ public class Escolha extends Evento{
         return true;
     }
 
+    /**
+     * print no terminal de todas as chaves
+     */
     private void printChaves(){
         for (int i = 0; i < chaves.length; i++){
             System.out.println(i + 1 + ". " + chaves[i]);

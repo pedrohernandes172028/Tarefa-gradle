@@ -1,10 +1,10 @@
-package lab5;
+package lab6;
 
 import java.util.List;
 import java.util.Scanner;
 
-import lab5.Cenario.*;
-import lab5.Entidades.Heroi;
+import lab6.Cenario.*;
+import lab6.Entidades.Heroi;
 
 /**
  * Gerencia o fluxo completo do jogo, incluindo navegação no mapa

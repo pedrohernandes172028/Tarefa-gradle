@@ -1,8 +1,8 @@
-package lab5.Entidades;
+package lab6.Entidades;
 import java.util.List;
 import java.util.Stack;
 
-import lab5.Cartas.*;
+import lab6.Cartas.*;
 
 import java.util.Collections;
 

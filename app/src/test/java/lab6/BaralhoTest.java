@@ -1,9 +1,10 @@
-package lab5;
+package lab6;
 
 
-import lab5.Entidades.Baralho;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
+
+import lab6.Entidades.Baralho;
 
 public class BaralhoTest {
     

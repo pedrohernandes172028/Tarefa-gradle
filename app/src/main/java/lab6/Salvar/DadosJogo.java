@@ -1,7 +1,7 @@
-package lab5.Salvar;
+package lab6.Salvar;
 
-import lab5.Cenario.NoMapa;
-import lab5.Entidades.*;
+import lab6.Cenario.NoMapa;
+import lab6.Entidades.*;
 
 
 /**

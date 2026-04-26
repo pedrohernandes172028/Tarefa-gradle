@@ -1,14 +1,14 @@
-package lab5;
+package lab6;
 
 import java.util.Scanner;
+
+import lab6.Cartas.*;
+import lab6.Cenario.*;
+import lab6.Entidades.*;
+import lab6.Salvar.*;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import lab5.Cenario.*;
-import lab5.Entidades.*;
-import lab5.Cartas.*;
-import lab5.Salvar.DadosJogo;
-import lab5.Salvar.JogoSalvo;
 
 public class App {
     private static JogoSalvo gerenciadorSalvamento = new JogoSalvo();

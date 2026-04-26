@@ -1,10 +1,10 @@
-package lab5.Entidades;
+package lab6.Entidades;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import lab5.Cartas.Carta;
-import lab5.Efeitos.*;
+import lab6.Cartas.Carta;
+import lab6.Efeitos.*;
 
 /**
  * Representa qualquer personagem no jogo

@@ -1,4 +1,4 @@
-package lab5.Cenario;
+package lab6.Cenario;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,8 +37,4 @@ public class NoMapa {
         filhos.add(filho);
     }
     
-/*     @Override
-    public String toString() {
-        return descricao;
-    } */
 }

@@ -1,5 +1,5 @@
-package lab5.Efeitos;
-import lab5.Entidades.Entidade;
+package lab6.Efeitos;
+import lab6.Entidades.Entidade;
 
 
 /**Força causa dano extra ao alvo do seu dono

@@ -1,4 +1,4 @@
-package lab5.Salvar;
+package lab6.Salvar;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -6,20 +6,12 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonDeserializer;
 import com.google.gson.JsonObject;
 
-import lab5.Cartas.Carta;
-import lab5.Cartas.CartaCura;
-import lab5.Cartas.CartaDano;
-import lab5.Cartas.CartaEscudo;
-import lab5.Cartas.CartaForca;
-import lab5.Cartas.CartaLentidao;
-import lab5.Cartas.CartaMortalForca;
-import lab5.Cartas.CartaMortalVeneno;
-import lab5.Cartas.CartaVelocidade;
-import lab5.Cartas.CartaVeneno;
-import lab5.Efeitos.Efeito;
-import lab5.Efeitos.Forca;
-import lab5.Efeitos.Veneno;
-import lab5.Entidades.*;
+import lab6.Cartas.*;
+import lab6.Efeitos.Efeito;
+import lab6.Efeitos.Forca;
+import lab6.Efeitos.Veneno;
+import lab6.Entidades.*;
+
 import java.io.*;
 
 /**

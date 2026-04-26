@@ -1,6 +1,6 @@
-package lab5.Cartas;
-import lab5.Efeitos.Forca;
-import lab5.Entidades.Entidade;
+package lab6.Cartas;
+import lab6.Efeitos.Forca;
+import lab6.Entidades.Entidade;
 
 /** ativa a forma específica Forca explosiva do efeito Forca, está relacionada a ataques corpo a corpo */
 public class CartaForca extends Carta{
