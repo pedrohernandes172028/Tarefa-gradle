@@ -3,8 +3,7 @@ package lab5;
 import java.util.List;
 import java.util.Scanner;
 
-import lab5.Cenario.Mapa;
-import lab5.Cenario.NoMapa;
+import lab5.Cenario.*;
 import lab5.Entidades.Heroi;
 
 /**
@@ -41,15 +40,15 @@ public class Jogo {
             noAtual.setVisitado(true);
             
             // Mostra informações do nó
-            System.out.println("\n=== " + noAtual.getDescricao() + " ===");
+            System.out.println("\n=== " + noAtual.getEvento().getDescricao() + " ===");
             
             // Executa a batalha
-            Batalha batalha = noAtual.getBatalha();
-            boolean venceu = batalha.executar(heroi, scanner);
+            Evento evento = noAtual.getEvento();    
+            boolean venceu = evento.iniciar(heroi, scanner);
             
             if (!venceu) {
                 System.out.println("\n=== FIM DE JOGO ===");
-                System.out.println("Você foi derrotado em " + noAtual.getDescricao());
+                System.out.println("Você foi derrotado em " + noAtual.getEvento().getDescricao());
                 emExecucao = false;
                 break;
             }
@@ -79,16 +78,11 @@ public class Jogo {
     public boolean progredir() {
         List<NoMapa> proximos = mapa.getProximosNos(noAtual);
         
-/*         if (proximos.isEmpty()) {
-            System.out.println("\nNão há mais caminhos disponíveis!");
-            return false;
-        } */
-        
         System.out.println("\n=== ESCOLHA O PRÓXIMO DESTINO ===");
-        System.out.println("Vida atual: " + heroi.getVida());
+        System.out.println(heroi.getNome() + " (" + heroi.getVida() + " de vida) (" + heroi.getDinheiro() + " rupias)");
         
         for (int i = 0; i < proximos.size(); i++) {
-            System.out.println((i + 1) + ". " + proximos.get(i).getDescricao());
+            System.out.println((i + 1) + ". " + proximos.get(i).getEvento().getDescricao());
         }
         System.out.println("0. Sair do jogo (salvar progresso)");
         

@@ -16,7 +16,7 @@ public class HeroiTest {
     
     @BeforeEach
     void setUp() {
-        heroi = new Heroi("Teste", 30, 5, 10);
+        heroi = new Heroi("Teste", 30, 10);
     }
     
     @Test
@@ -35,7 +35,7 @@ public class HeroiTest {
     
     @Test
     void testDanoSemEscudo() {
-        heroi = new Heroi("Teste", 30, 0, 10);
+        heroi = new Heroi("Teste", 30, 10);
         heroi.receberDano(10);
         assertEquals(20, heroi.getVida());
         assertEquals(0, heroi.getEscudo());

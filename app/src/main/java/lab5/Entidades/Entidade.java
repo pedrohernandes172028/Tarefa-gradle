@@ -67,6 +67,13 @@ public abstract class Entidade {
             vida = 0;
         }
     }
+    /**
+     * aumenta a vida máxima da entidade
+     * @param valor valor a ser aumentado na vida máxima
+     */
+    public void aumentarVidaMaxima(int valor){
+        vidaMaxima += valor;
+    }
     
     /**
      * altera a velocidade da entidade

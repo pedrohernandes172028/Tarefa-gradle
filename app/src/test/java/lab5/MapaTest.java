@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import lab5.Cenario.Batalha;
 import lab5.Cenario.Mapa;
 import lab5.Cenario.NoMapa;
 import lab5.Entidades.Cobrinha;
@@ -19,13 +20,13 @@ public class MapaTest {
     void setUp() {
         List<Inimigo> inimigos1 = new ArrayList<>();
         inimigos1.add(new Cobrinha("Teste", 10, 5,  10));
-        Batalha batalha1 = new Batalha(inimigos1);
-        raiz = new NoMapa(batalha1, "Nó Raiz");
+        Batalha batalha1 = new Batalha("Nó Raiz", inimigos1, 10);
+        raiz = new NoMapa(batalha1);
         
         List<Inimigo> inimigos2 = new ArrayList<>();
         inimigos2.add(new Cobrinha("Teste2", 10, 5,  10));
-        Batalha batalha2 = new Batalha(inimigos2);
-        NoMapa filho = new NoMapa(batalha2, "Nó Filho");
+        Batalha batalha2 = new Batalha("Nó Filho", inimigos2, 10);
+        NoMapa filho = new NoMapa(batalha2);
         
         raiz.adicionarFilho(filho);
         mapa = new Mapa(raiz);
@@ -46,13 +47,13 @@ public class MapaTest {
     void testGetProximosNos() {
         List<NoMapa> proximos = mapa.getProximosNos(raiz);
         assertEquals(1, proximos.size());
-        assertEquals("Nó Filho", proximos.get(0).getDescricao());
+        assertEquals("Nó Filho", proximos.get(0).getEvento().getDescricao());
     }
     
     @Test
     void testNoMapaDescricao() {
-        assertEquals("Nó Raiz", raiz.getDescricao());
-        assertEquals("Nó Filho", raiz.getFilhos().get(0).getDescricao());
+        assertEquals("Nó Raiz", raiz.getEvento().getDescricao());
+        assertEquals("Nó Filho", raiz.getFilhos().get(0).getEvento().getDescricao());
     }
     
     @Test
@@ -64,7 +65,8 @@ public class MapaTest {
     
     @Test
     void testNoMapaGetBatalha() {
-        assertNotNull(raiz.getBatalha());
-        assertEquals(1, raiz.getBatalha().getInimigos().size());
+        assertNotNull(raiz.getEvento());
+        Batalha batalha = (Batalha) raiz.getEvento();
+            assertEquals(1, batalha.getInimigos().size());
     }
 }

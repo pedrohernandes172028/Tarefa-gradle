@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
 import java.util.List;
 import lab5.Entidades.Inimigo;
-
+import lab5.Cenario.Batalha;
 import lab5.Entidades.Cobrinha;
 
 public class BatalhaTest {
@@ -17,7 +17,7 @@ public class BatalhaTest {
     void setUp() {
         inimigos = new ArrayList<>();
         inimigos.add(new Cobrinha("Inimigo1", 10, 5, 10));
-        batalha = new Batalha(inimigos);
+        batalha = new Batalha("Teste", inimigos, 10);
 
     }
     

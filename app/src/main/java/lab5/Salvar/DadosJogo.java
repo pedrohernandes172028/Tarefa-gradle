@@ -35,7 +35,7 @@ public class DadosJogo {
             return null;
         }
         
-        if (atual.getDescricao().equalsIgnoreCase(nomeNoMapa)){
+        if (atual.getEvento().getDescricao().equalsIgnoreCase(nomeNoMapa)){
             return atual;
         }
 

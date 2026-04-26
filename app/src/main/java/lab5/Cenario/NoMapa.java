@@ -3,30 +3,22 @@ package lab5.Cenario;
 import java.util.ArrayList;
 import java.util.List;
 
-import lab5.Batalha;
-
 /**
  * Representa um nó no mapa, contendo uma batalha e conexões para outros nós
  */
 public class NoMapa {
-    private Batalha batalha;
-    private String descricao;
+    private Evento evento;
     private List<NoMapa> filhos;
     private boolean visitado;
     
-    public NoMapa(Batalha batalha, String descricao) {
-        this.batalha = batalha;
-        this.descricao = descricao;
+    public NoMapa(Evento evento) {
+        this.evento = evento;
         this.filhos = new ArrayList<>();
         this.visitado = false;
     }
     
-    public Batalha getBatalha() {
-        return batalha;
-    }
-    
-    public String getDescricao() {
-        return descricao;
+    public Evento getEvento() {
+        return evento;
     }
     
     public List<NoMapa> getFilhos() {
@@ -45,8 +37,8 @@ public class NoMapa {
         filhos.add(filho);
     }
     
-    @Override
+/*     @Override
     public String toString() {
         return descricao;
-    }
+    } */
 }

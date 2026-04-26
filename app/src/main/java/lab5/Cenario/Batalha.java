@@ -1,21 +1,26 @@
-package lab5;
+package lab5.Cenario;
 
 import java.util.List;
 import java.util.Scanner;
+
 import lab5.Entidades.*;
 
 /**
  * Encapsula a lógica de um combate individual
  */
-public class Batalha {
+public class Batalha extends Evento{
     private List<Inimigo> inimigos;
     private boolean vitoria;
     private boolean concluida;
+    /** quantidade de dinherio que o heroi vai ganhar se vencer esta batalha */
+    private int recompensa;
     
-    public Batalha(List<Inimigo> inimigos) {
+    public Batalha(String descricao, List<Inimigo> inimigos, int recompensa) {
+        super(descricao);
         this.inimigos = inimigos;
         this.vitoria = false;
         this.concluida = false;
+        this.recompensa = recompensa;
     }
     
     /**
@@ -24,7 +29,7 @@ public class Batalha {
      * @param scanner Scanner para entrada do usuário
      * @return true se o herói venceu, false caso contrário
      */
-    public boolean executar(Heroi heroi, Scanner scanner) {
+    public boolean iniciar(Heroi heroi, Scanner scanner) {
         System.out.println("\n=== BATALHA ===");
         System.out.println("Inimigos:");
         for (Inimigo inimigo : inimigos) {
@@ -40,7 +45,10 @@ public class Batalha {
         concluida = true;
         
         if (vitoria) {
-            System.out.println("\nVitória! Você derrotou todos os inimigos!");
+            heroi.reiniciarHeroi();
+            heroi.mudarDinheiro(recompensa);
+            System.out.println(heroi.getNome() + " ganhou " + recompensa + " rupias como recompensa!");
+            System.out.println(heroi.getNome() + " possui " + heroi.getDinheiro() + " rupias.");
         } else {
             System.out.println("\nDerrota! Seu herói foi derrotado...");
         }

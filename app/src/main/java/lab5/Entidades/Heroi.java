@@ -2,7 +2,6 @@ package lab5.Entidades;
 import java.util.Scanner;
 
 import lab5.Cartas.Carta;
-
 import java.util.List;
 
 
@@ -12,12 +11,14 @@ public class Heroi extends Entidade{
     private Baralho baralho;
     /** armazena quanta energia o jogador tem para gastar */
     private int energia;
+    /**dinheiro do heroi para gastar na loja */
+    private int dinheiro;
 
-    public Heroi(String nome, int vida, int escudo, int velocidade){
-        super(nome, vida, escudo, velocidade);
+    public Heroi(String nome, int vida, int velocidade){
+        super(nome, vida, 0, velocidade);
         this.baralho = new Baralho();
         this.energia = 0;
-
+        this.dinheiro = 0;
     }
 
     /**Usado sempre no final do turno para zerar o escudo do jogador */
@@ -29,6 +30,29 @@ public class Heroi extends Entidade{
     }
     public Baralho getBaralho(){
         return baralho;
+    }
+    public int getDinheiro(){
+        return dinheiro;
+    }
+    /**
+     * aumenta(+valor) ou diminiu(-valor) a quantidade de dinherio do heroi
+     * @param valor quantidade de dinherio a ser mudado
+     * @return retorna false caso o heroi não tenha dinheiro suficiente para gastar 
+     */
+    public boolean mudarDinheiro(int valor){
+        if (dinheiro < -valor){
+            return false;
+        }
+        dinheiro += valor;
+        return true;
+    }
+
+    /**
+     * reinicia o heroi depois de uma batalha
+     */
+    public void reiniciarHeroi(){
+        baralho.reiniciarBaralho();
+        getEfeitos().clear();
     }
 
     public void resetarenergia(){

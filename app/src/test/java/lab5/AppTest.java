@@ -13,7 +13,7 @@ public class AppTest {
     void testCriarMapa() {
         Mapa mapa = App.criarMapa();
         assertNotNull(mapa);
-        assertEquals("Entrada da Floresta", mapa.getRaiz().getDescricao());
+        assertEquals("Entrada da Floresta", mapa.getRaiz().getEvento().getDescricao());
         assertEquals(2, mapa.getRaiz().getFilhos().size());
         
     }

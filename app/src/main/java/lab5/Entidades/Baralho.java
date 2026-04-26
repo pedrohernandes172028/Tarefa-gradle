@@ -74,4 +74,46 @@ public class Baralho {
     public void cartaUsada(int comando){
         deckDescarte.push(cartasNaMao.remove(comando - 1));
     }
+
+    /**
+     * adiciona uma carta no baralho escolhida pelo usuário
+     * @param carta carta a ser adicionada
+     */
+    public void adicionarCarta(Carta carta){
+        deckCompra.push(carta);
+        Collections.shuffle(deckCompra);
+    }
+
+    /**
+     * remove uma carta no baralho 
+     * @param opcao posicao no deckComprada carta a ser removida 
+     */
+    public void removerCarta(int opcao){
+        deckCompra.remove(opcao);
+        Collections.shuffle(deckCompra);
+    }
+
+    /**
+     * passa todas as cartas do descarte e da mao do heroi para o deck de compras
+     */
+    public void reiniciarBaralho(){
+        deckCompra.addAll(deckDescarte);
+        deckDescarte.clear();
+        deckCompra.addAll(cartasNaMao);
+        cartasNaMao.clear();
+        Collections.shuffle(deckCompra);
+    }
+
+    /**
+     * Retorna um print de todas as cartas em deckCompras e suas descrições no terminal
+     */
+    public void printCartas(){
+        for (int i = 0; i < deckCompra.size(); i++){
+            System.out.println((i + 1) + ". " + deckCompra.get(i).getNome() + " / " + deckCompra.get(i).getDescricao());
+        }
+    }
+
+    public Stack<Carta> getDeckCompra(){
+        return deckCompra;
+    }  
 }

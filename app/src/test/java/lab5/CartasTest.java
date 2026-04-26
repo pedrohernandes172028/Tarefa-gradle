@@ -19,7 +19,7 @@ class CartasTest {
 
     @BeforeEach
     void setUp(){
-        heroi = new Heroi("Arthur", 40, 0, 10);
+        heroi = new Heroi("Arthur", 40, 10);
     }
 
     @Test
